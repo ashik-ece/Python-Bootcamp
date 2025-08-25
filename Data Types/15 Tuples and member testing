@@ -1,0 +1,38 @@
+Tuples -> ()
+- Tuples are Immutable -> They cannot be changed
+- Similar to Arrays, but immutable
+
+```
+masala_spices = ("Cardomom, "Cloves, "cinnamon")
+(spice1, spice2, spice3) = masala_spices
+
+//unpacking
+print(f"Main Masala Spices: {spice1}, {spice2}, {spice3}") 
+
+
+
+ginger_ratio, cardamom_ratio = 2,1
+// 2 wil be alocated to gigner_ratio and 1 will be automatically allocated to cardamom_ratio
+// This is possbile because of tuples, it converts the 2,1 into (2,1) [tuples] and assigns it to the variable.  
+
+print(f"Ratio is G: {giner_ratio} and C: {Cardemom Ratio}")  // o/p : Ratio of G : 2 and C : 1
+```
+
+- We can flip the ratio/values without creating a temp variable, with the help of tuples
+
+```
+// This will put the value of cadramom value to the ginger value andd vice versa (Unique feature of python.)
+ginger_ratio , cardramom_ratio = cadramom_ratio, ginger_raio
+
+```
+
+MEMBERSHIP TESTING
+
+```
+print(f"Is ginger in masala spices? {'ginger' in masala_spices}" // o/p : False
+NOTE : ginger must be case sensitive
+print(f"Is cinamon in masala spices? {'cinamon' in masala_spices}" // o/p : True
+print(f"Is cinamon in masala spices? {'Cinamon' in masala_spices}" // o/p : Flase (case sensitive)
+```
+
+Membership testing is used to check whether the particular string or object or variable is present in the said tuple.
